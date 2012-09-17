@@ -1,0 +1,8 @@
+<html>
+<form method='POST' action='fileServe.php'>
+<input type=file name= "file"><br>
+<br>
+<input type= submit value= "submit">	
+</form>
+</html>
+

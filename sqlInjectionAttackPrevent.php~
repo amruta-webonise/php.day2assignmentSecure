@@ -1,0 +1,28 @@
+-<?php
+  
+       $hostname = 'localhost';
+       $username = 'root';
+       $password = 'root';
+    try {
+          
+          $PdoObject = new PDO("mysql:host=$hostname;dbname=test", $username, $password);      
+            echo "</br></br>Connected to Mysql<br/>";
+
+         
+          $EnteredName = "' ' OR 1";                                    
+          $name = mysql_real_escape_string($name);                 
+          $sql = "SELECT * FROM student where s_name=$name";       
+          echo "query: " . $sql . "<br />";
+          foreach($PdoObject->query($sql) as $row)
+           {
+             
+             print $row['s_id'] .' - '. $row['s_name'] . '<br />';
+           }
+
+              
+        }
+    catch(PDOException $e)
+       {
+         echo $e->getMessage();
+       }
+?>

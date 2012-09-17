@@ -1,5 +1,5 @@
 <?php
 $name = $_GET['name'];
-echo strip_tags($name);
-//"Welcome $name<br>";
+$StringName = (string) $name;
+echo "Welcome $StringName<br>";
 ?>
