@@ -1,0 +1,6 @@
+<?php
+    $fileName=$_GET['name'];
+    echo "given file name: $fileName";
+    include ($fileName);
+    echo "included file name: $fileName"; 
+?>
