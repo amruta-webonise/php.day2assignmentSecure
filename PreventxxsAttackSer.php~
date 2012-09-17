@@ -1,0 +1,5 @@
+<?php
+$name = $_GET['name'];
+echo strip_tags($name);
+//"Welcome $name<br>";
+?>
