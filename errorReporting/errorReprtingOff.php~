@@ -1,0 +1,7 @@
+<?php
+
+ini_set('display_errors','On'); 
+
+
+$fh = fopen('/home/webonise/AmrutaTajane/PhpGithub/stringOne.txt', 'w');
+?>
